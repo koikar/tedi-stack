@@ -1,0 +1,18 @@
+# Dependencies
+/node_modules/
+
+# Builds
+/build
+
+# Environment variables
+.env
+
+# Misc
+.DS_Store
+
+# Easy way to create temporary files/folders that won't accidentally be added to git
+*.local.*
+
+# generated files
+/.react-router/
+/app/components/ui/icons

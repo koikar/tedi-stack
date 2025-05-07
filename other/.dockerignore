@@ -1,0 +1,33 @@
+# This file is moved to the root directory before building the image
+
+# Version control
+.git/
+.gitignore
+.github/
+
+# Build artifacts
+build
+dist
+
+# Development
+node_modules
+.env*
+!.env.op
+.react-router
+
+
+# Logs
+logs
+*.log
+
+# Project specific
+.vscode/
+.zed/
+README.md
+
+# Docker related
+Dockerfile*
+.dockerignore
+
+# Miscellaneous
+.DS_Store

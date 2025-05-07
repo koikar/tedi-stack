@@ -1,0 +1,80 @@
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"files": {
+		"ignore": ["**/node_modules/**", "**/build/**", ".env"]
+	},
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"defaultBranch": "main",
+		"useIgnoreFile": true
+	},
+	"formatter": {
+		"enabled": true,
+		"formatWithErrors": true,
+		"indentStyle": "tab",
+		"indentWidth": 2,
+		"lineEnding": "lf",
+		"lineWidth": 100,
+		"attributePosition": "auto"
+	},
+	"organizeImports": {
+		"enabled": false
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"suspicious": {
+				"recommended": true,
+				"noArrayIndexKey": "off",
+				"noExplicitAny": "warn",
+				"noAssignInExpressions": "warn",
+				"noConsole": "warn"
+			},
+			"style": {
+				"recommended": true,
+				"noNonNullAssertion": "warn",
+				"noParameterAssign": "warn"
+			},
+			"complexity": {
+				"recommended": true,
+				"noForEach": "warn"
+			},
+			"security": {
+				"recommended": true
+			},
+			"performance": {
+				"recommended": true
+			},
+			"correctness": {
+				"recommended": true,
+				"noUnusedImports": "warn",
+				"noUnusedVariables": "warn",
+				"noUnusedLabels": "warn",
+				"noUnusedFunctionParameters": "warn",
+				"useExhaustiveDependencies": "warn"
+			},
+			"a11y": {
+				"recommended": true
+			},
+			"nursery": {
+				"recommended": true,
+				"noProcessEnv": "warn"
+			}
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"enabled": true,
+			"trailingCommas": "es5",
+			"semicolons": "asNeeded",
+			"arrowParentheses": "always",
+			"bracketSameLine": false,
+			"bracketSpacing": true,
+			"quoteStyle": "single",
+			"jsxQuoteStyle": "double",
+			"quoteProperties": "asNeeded"
+		}
+	}
+}

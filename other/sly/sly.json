@@ -1,0 +1,35 @@
+{
+	"$schema": "https://sly-cli.fly.dev/registry/config.json",
+	"libraries": [
+		{
+			"name": "@radix-ui/icons",
+			"directory": "./other/icons",
+			"transformers": ["transform-icon.ts"]
+		},
+		{
+			"name": "lucide-icons",
+			"directory": "./other/icons/",
+			"transformers": ["transform-icon.ts"]
+		},
+		{
+			"name": "tabler-icons",
+			"directory": "./other/icons/",
+			"transformers": ["transform-icon.ts"]
+		},
+		{
+			"name": "material-design-icons",
+			"directory": "./other/icons/",
+			"transformers": ["transform-icon.ts"]
+		},
+		{
+			"name": "tailwindlabs/heroicons",
+			"directory": "./other/icons/",
+			"transformers": ["transform-icon.ts"]
+		},
+		{
+			"name": "simple-icons",
+			"directory": "./other/icons/",
+			"transformers": ["transform-icon.ts"]
+		}
+	]
+}

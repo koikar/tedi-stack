@@ -1,0 +1,29 @@
+{
+	"extends": ["@epic-web/config/typescript"],
+	"include": [
+		"**/*.ts",
+		"**/*.tsx",
+		"**/*.js",
+		"**/*.jsx",
+		"**/.server/**/*",
+		"**/.client/**/*",
+		".react-router/types/**/*"
+	],
+	"compilerOptions": {
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"moduleResolution": "Bundler",
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"allowJs": true,
+		"forceConsistentCasingInFileNames": true,
+		"verbatimModuleSyntax": true,
+		"types": ["@react-router/node", "vite/client"],
+		"rootDirs": [".", "./.react-router/types"],
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./app/*"],
+			"@/icon-name": ["./app/components/ui/icons/types.ts"],
+			"@/rr/*": [".react-router/types/app/*"]
+		}
+	}
+}
