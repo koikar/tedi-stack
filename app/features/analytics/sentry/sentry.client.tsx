@@ -18,7 +18,7 @@ export function init() {
 		sendDefaultPii: true, // Adds request headers and IP for users
 		integrations: [
 			// Replay is only available in the client
-			Sentry.browserTracingIntegration(),
+			Sentry.reactRouterTracingIntegration(),
 			Sentry.replayIntegration(),
 			Sentry.browserProfilingIntegration(),
 		],
